@@ -1,0 +1,28 @@
+# Secrets and local config — never commit these.
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local runtime data (SQLite databases, LangGraph checkpoints, generated docs)
+backend/data/
+*.db
+*.db-shm
+*.db-wal
+
+# Node / Vite
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
